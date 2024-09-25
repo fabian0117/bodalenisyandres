@@ -1,0 +1,41 @@
+<!DOCTY<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="confirmation">
+        <h1>Confirmación de Asistencia</h1>
+        <p>Por favor, completa los siguientes detalles:</p>
+        
+        <form id="confirmation-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="guests">Número de Acompañantes:</label>
+            <input type="number" id="guests" name="guests" min="0" required>
+
+            <button type="submit">Enviar Confirmación</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('confirmation-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de la manera predeterminada
+
+            // Aquí puedes agregar código para enviar los datos a un servidor si lo necesitas
+            // Por ahora, solo redirigiremos a la página de agradecimiento
+
+            window.location.href = 'gracias.html'; // Redirige a la página de agradecimiento
+        });
+    </script>
+
+</body>
+</html>

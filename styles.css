@@ -1,0 +1,220 @@
+/* Estilo general */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7E7CE; /* Fondo color champán */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #B08D57;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../boda/img/boda1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el texto */
+    z-index: 1;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Intro Section */
+.intro {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #B08D57;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.3em;
+    color: #5C4033;
+    margin-bottom: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+    position: relative;
+    padding: 50px 20px; /* Ajustar el padding para móviles */
+    text-align: center;
+    background-color: #F7E7CE;
+}
+
+.background-images {
+    position: relative;
+    height: 300px; /* Altura fija para el área de las imágenes */
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Transparencia para las imágenes de fondo */
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text h3 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 1.3em;
+}
+
+/* Quotes Section */
+.quotes {
+    background-color: #F7E7CE;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.quotes blockquote {
+    font-style: italic;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* Details Section */
+.details {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.details .info {
+    background-color: #fff;
+    border: 1px solid #B08D57;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta button {
+    background-color: #B08D57;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta button:hover {
+    background-color: #A07948;
+}
+
+/* Confirmation Section */
+.confirmation {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.confirmation form {
+    background-color: #fff;
+    border: 1px solid #B08D57;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.confirmation label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.confirmation input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #B08D57;
+    border-radius: 5px;
+}
+
+.confirmation button {
+    background-color: #B08D57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.confirmation button:hover {
+    background-color: #A07948;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
